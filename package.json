@@ -1,0 +1,16 @@
+{
+  "name": "aws-iot-dashboard",
+  "version": "1.0.0",
+  "description": "AWS IoT Core telemetry dashboard — real-time MQTT + React demo",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix broker && npm install --prefix simulator && npm install --prefix frontend",
+    "build:all": "npm run build --prefix broker && npm run build --prefix simulator && npm run build --prefix frontend",
+    "broker": "npm run dev --prefix broker",
+    "simulator": "npm run dev --prefix simulator",
+    "frontend": "npm run dev --prefix frontend"
+  },
+  "keywords": ["aws", "iot", "mqtt", "react", "typescript", "websocket"],
+  "author": "Sebastián Álvarez",
+  "license": "MIT"
+}
